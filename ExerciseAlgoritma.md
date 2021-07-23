@@ -1,37 +1,99 @@
 Tugas Algoritma
 
-
-Project 01
-
-- menyiapkan sebuah laptop/komputer
-- masuk kedalam program
-- masuk kedalam text editor program
-- menulis rangkaian program yang akan dibuat
-- menentukan kondisi yang akan dijalankan
-- mengecek program apakah bisa dijalankan
-- apabila program berhasil dijalankan maka akan menampilkan hasil dari kondisi yang sudah di tentukan.
+project 01
 
 
+	Deklarasi var:
 
-Project 02 
+		- menyiapkan sebuah laptop/komputer
+		- masuk kedalam program
+		- masuk kedalam text editor program
+		- menulis rangkaian program yang akan dibuat
+		- menentukan kondisi yang akan dijalankan
+			add input * 3600 ke CAL
+			CAL<=input * 3600
+		- mengecek program apakah bisa dijalankan
+		- apabila program berhasil dijalankan maka akan menampilkan hasil dari kondisi yang sudah di tentukan.
+ 
+ 
+		1. deklarasi var input, CAL, res
+		2. baca nilai dari input
+		3. add input * 3600 ke CAL
+			CAL<=input * 3600
+		4. display CAL
+ 
+ 
+	pseudocode:
 
-- Menyiapkan Sebuah laptop/komputer
-- Membuka text editor
-- Menulis sebuah kondisi
-- Menuliskan componen nilai 1 dan nilai 2 di dalam kondisi yang telah di buat
-- Membuat sebuah proses perbandingan antara nilai 1 dan nilai 2
-- Kemudian menjalankan program apakah sudah sesuai keinginan atau belum
-- Apabila program berhasil di jalankan maka program bisa dikatakan selesai
-- Apabila program gagal di jalankan maka akan dikoreksi kembali
+		STORE "input" with any value
+		STORE "res" wthout any area value
+ 
+		CAL<=input * 3600
+ 
+		SET "res" value with cal result
+		DISPLAY "res"
 
 
+ 
+project 02
 
-Project 03
+	siapkan teks editor, laptop
+	hidupkan laptop lalu buka teks editor kesayangan masing masing
+	siapkan beberapa variabel yaitu a dan b, result
+	baca variable inputan a dan b
+	cocokan inputan user dengan variabel
+	jika nilai a > b maka isikan pesan pada result=a terbesar
+	jika nilai a<b maka isikan pesan pada result = b terbesar
+	jika nilai a =b maka isikan pesan pada result="nilai a dan b sama
+	tampilkan result
 
-- Menyipakan Sebuah laptop/komputer
-- Membuka text editor
-- Mulai menulis sebuah kondisi
-- Masukan inputan antara lain jumlah penumpang, harga tiket, riwayat pembelian
-- Jalankan program menggunakan data yang sudah di tentukan
-- Apabila tiket yang dibeli lebih dari satu maka harga tiket akan dikalikan jumlah penumpang
-- Menampilkan keterangan data yang telah diinputkan
+
+ 
+project 03
+
+	siapkan teks editor, pada laptop
+	hidupkan laptop lalu buka teks editor kesayangan masing masing
+ 	deklarasikan variable jumlahTravel, hargaTiket, jenisPerjalanan
+ 	
+	STORE "jumlahTraveler" dengan value dari inputan
+	STORE "hargaTiket" dengan value dari inputan
+	STORE "bayar" without any area value
+	STORE "jenisPerjalanan" dengan value dari inputan
+ 
+	if "jenisPerjalanan" == twoway
+		CALCULATE<="jumlahTraveler" * "hargaTiket"*2
+		STORE "bayar" value with calculate result
+	else 
+		CALCULATE<="jumlahTraveler" * "hargaTiket"
+		STORE "bayar" value with calculate result
+	DISPLAY "bayar"
+
+
+ 
+project 04
+
+	STORE "n" dengan value dari inputan
+	STORE "i" to 0;
+ 
+	WHILE "i" lessthen equals "n"
+	i<-i+1
+	DISPLAY "i"
+ 
+
+
+project 05
+
+	STORE "n" dengan value inputan
+	STORE "i" to 1
+	STORE "msg" without input user
+ 
+		FOR (i lessTehen equalsto n; i+1, msg="")
+ 
+			IF "n"%15 equals 0
+				DO "msg"= "fizzbuzz"
+			ELSE IF "n"%3 equals 0
+				DO "msg"="Fizz"
+			ELSE IF "n"%5 equals 0
+				DO "msg" = "Buzz"
+			ELSE
+				DO "msg" = n
